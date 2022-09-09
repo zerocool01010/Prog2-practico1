@@ -2,13 +2,13 @@ package ej1;
 
 public class Persona {
 	//Attributes
-	private String name;
+	private String name; //private can´t be "seen" from outside the class, while the public can be "seen" from outside
 	private int age;
 	//private dateType dateBirth;
 	private int DNI;
 	private String sex;
 	private int weight;
-	private int height;
+	public int height;
 	
 	//constructor: it is a method with no return value and same name as the public class
 	//in the constructor we assign default values to our private attributes of the class
