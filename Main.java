@@ -14,5 +14,7 @@ public class Main {
 		//never do this!
 		//pedro.height = 24;
 		//never! always call the method, for example: pedro.setHeight(24);
+		//why? because with the method I have absolute control on how the attr may be changed from outside, adding the logic
+		//to manage what comes from parameter-args
 	}
 }
