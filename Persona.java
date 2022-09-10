@@ -10,6 +10,8 @@ public class Persona {
 	private int weight;
 	public int height;
 	
+	Bombero bomber;
+	
 	//constructor: it is a method with no return value and same name as the public class
 	//in the constructor we assign default values to our private attributes of the class
 	//public Persona() {
@@ -35,6 +37,9 @@ public class Persona {
 		this.sex = "female";
 		this.weight = 1;
 		this.height = 1;
+		this.bomber = new Bombero("patricio", this); //with "this" we pass the current constructor "Persona" as param
+		//now if someone wants to know the name of the Bombero object, can ask directly to the Bombero through its getNameMethod
+		//bombero.getName();
 	}
 	//another one
 	public Persona(int DNI, String name, int age, String sex, int weight, int height) {
