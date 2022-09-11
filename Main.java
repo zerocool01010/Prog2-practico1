@@ -12,5 +12,6 @@ public class Main {
 		System.out.println("Es su cumpleaños?: " + Manuel.getIsItBirthDay());
 		System.out.println("Es mayor de edad?: " + Manuel.getIsItOlderThan18());
 		System.out.println("Puede votar?: " + Manuel.getCanVote());
+		System.out.println("Es coherente fecha de nacimiento y edad?: "+Manuel.getCoherenceBetweenAgeAndDate());
 	}
 }

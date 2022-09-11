@@ -1,4 +1,5 @@
 package ej1;
+import java.time.Period;
 import java.time.LocalDate;
 
 public class Persona {
@@ -85,4 +86,15 @@ public class Persona {
 		}
 		return false;
 	}
+	public boolean getCoherenceBetweenAgeAndDate() {
+		LocalDate today = LocalDate.now();
+		Period period = Period.between(this.date, today);
+		int anios = period.getYears();
+		System.out.println("los anios obtenidos son: "+anios);
+		if (anios == this.age) {
+			return true;
+		}
+		return false;
+	}
+	
 }
