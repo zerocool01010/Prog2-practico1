@@ -9,7 +9,7 @@ public class Persona {
 	private int DNI;
 	private String sex;
 	private int weight;
-	public int height;
+	public double height;
 
 	// constructor
 	public Persona() {
@@ -17,36 +17,30 @@ public class Persona {
 		this.age = 22;
 		this.date = LocalDate.of(2000, 1, 1);
 		this.sex = "female";
-		this.weight = 1;
-		this.height = 1;
+		this.weight = 78;
+		this.height = 1.76;
 	}
 	//the other constructors
 	public Persona (int DNI) {
-		this.DNI = DNI;
+		this(DNI, "N N");
 	}
 	public Persona(int DNI, String name) {
-		this.DNI = DNI;
-		this.setName(name);
+		this(DNI, name, LocalDate.of(2000, 1, 1));
 	}
 	public Persona(int DNI, String name, LocalDate dateBirth) {
 		this.DNI = DNI;
 		this.setName(name);
 		this.date = dateBirth;
 	}
+	//setter
+	public void setName(String n) {
+		this.name = n;
+	}
 	
 	//methods
-	public void setSex(String sexParam) {
-		sex = sexParam;
-	}
-	public void setName(String name) {
-		this.name = name;
+	public double getBodyMassIndex() {
+		double BMI = (this.weight / (this.height*this.height));
+		return BMI;
 	}
 	
-	//get method: to access or get the attribute value from outside
-	public String getName() {
-		return this.name;
-	}
-	public int getBodyMassIndex() {
-		return (this.weight / this.height*this.height);
-	}
 }

@@ -7,8 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		Persona pedro = new Persona();
 		
-		System.out.println(pedro.getDni());
-		System.out.println(pedro.getBodyMassIndex());
+		System.out.println("El indice de masa corporal es de: " +pedro.getBodyMassIndex());
 		
 
 	}
