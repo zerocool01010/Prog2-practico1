@@ -9,7 +9,7 @@ public class Persona {
 	private int DNI;
 	private String sex;
 	private int weight;
-	public double height;
+	private double height;
 
 	// constructor
 	public Persona() {
@@ -35,6 +35,21 @@ public class Persona {
 	//setter
 	public void setName(String n) {
 		this.name = n;
+	}
+	public void setAge(int a) {
+		this.age = a;
+	}
+	public void setSex(String s) {
+		this.sex = s;
+	}
+	public void setDate(LocalDate d) {
+		this.date = d;
+	}
+	public void setWeight(int w) {
+		this.weight = w;
+	}
+	public void setHeight(double h) {
+		this.height = h;
 	}
 	
 	//methods
