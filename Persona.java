@@ -43,4 +43,11 @@ public class Persona {
 		return BMI;
 	}
 	
+	public boolean getIsItInShape() {
+		double BMI = this.getBodyMassIndex();
+		if (BMI > 18.5 && BMI < 25) {
+			return true;
+		}
+		return false;
+	}
 }
