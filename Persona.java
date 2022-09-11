@@ -58,4 +58,10 @@ public class Persona {
 		}
 		return false;
 	}
+	public boolean getIsItOlderThan18() {
+		if (this.age > 18) {
+			return true;
+		}
+		return false;
+	}
 }
