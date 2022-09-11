@@ -79,4 +79,10 @@ public class Persona {
 		}
 		return false;
 	}
+	public boolean getCanVote() {
+		if (this.age > 16) {
+			return true;
+		}
+		return false;
+	}
 }
