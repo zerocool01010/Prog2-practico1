@@ -40,6 +40,9 @@ public class Persona {
 	public int getAge() {
 		return this.age;
 	}
+	public long getDni() {
+		return this.DNI;
+	}
 	public String getSex() {
 		return this.sex;
 	}
@@ -119,6 +122,7 @@ public class Persona {
 	public String getObjectInfo() {
 		String info = ("El nombre es: " + this.getName()
 						+ " La edad es: " + this.getAge()
+						+ " El DNI es: " + this.getDni()
 						+ " El sexo es: " + this.getSex()
 						+ " La fecha de nacimiento es: " + this.getDateBirth()
 						+ " Su peso es: " + this.getWeight()

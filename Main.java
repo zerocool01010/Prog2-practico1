@@ -5,7 +5,8 @@ import java.time.LocalDate;
 public class Main {
 	
 	public static void main(String[] args) {
-		Persona Manuel = new Persona("Manuel", 28, 37766544, LocalDate.of(1993, 21, 12), "male", 78, 1.76);
+		Persona Manuel = new Persona("Manuel", 28, 37766544, LocalDate.of(1993, 12, 21), "male", 78, 1.76);
+		Persona anybody = new Persona(40100240);
 		
 		System.out.println("El indice de masa corporal es de: " +Manuel.getBodyMassIndex());
 		System.out.println("Está en forma?: " + Manuel.getIsItInShape());
@@ -14,5 +15,7 @@ public class Main {
 		System.out.println("Puede votar?: " + Manuel.getCanVote());
 		System.out.println("Es coherente fecha de nacimiento y edad?: "+Manuel.getCoherenceBetweenAgeAndDate());
 		System.out.println("La informacion del objeto Manuel es: " + Manuel.getObjectInfo());
+		
+		System.out.println("anybody info: "+ anybody.getObjectInfo());
 	}
 }
