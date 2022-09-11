@@ -10,8 +10,6 @@ public class Main {
 		System.out.println(pedro.getDni());
 		System.out.println(pedro.getBodyMassIndex());
 		
-		LocalDate hoy = LocalDate.now();
-		System.out.println("hoy es: " +hoy);
 
 	}
 }
