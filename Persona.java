@@ -33,7 +33,27 @@ public class Persona {
 		this.setName(name);
 		this.date = dateBirth;
 	}
-	//setter
+	//getters
+	public String getName() {
+		return this.name;
+	}
+	public int getAge() {
+		return this.age;
+	}
+	public String getSex() {
+		return this.sex;
+	}
+	public LocalDate getDateBirth() {
+		return this.date;
+	}
+	public int getWeight() {
+		return this.weight;
+	}
+	public double getHeight() {
+		return this.height;
+	}
+	
+	//setters
 	public void setName(String n) {
 		this.name = n;
 	}
@@ -96,5 +116,14 @@ public class Persona {
 		}
 		return false;
 	}
-	
+	public String getObjectInfo() {
+		String info = ("El nombre es: " + this.getName()
+						+ "La edad es: " + this.getAge()
+						+ "El sexo es: " + this.getSex()
+						+ "La fecha de nacimiento es: " + this.getDateBirth()
+						+ "Su peso es: " + this.getWeight()
+						+ "Su altura es: " + this.getHeight()
+				);
+		return info;
+	}
 }
