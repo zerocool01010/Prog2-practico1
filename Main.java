@@ -9,6 +9,7 @@ public class Main {
 		
 		System.out.println("El indice de masa corporal es de: " +Manuel.getBodyMassIndex());
 		System.out.println("Está en forma?: " + Manuel.getIsItInShape());
+		System.out.println("Es su cumpleaños?: " + Manuel.getIsItBirthDay());
 
 	}
 }

@@ -50,4 +50,12 @@ public class Persona {
 		}
 		return false;
 	}
+	public boolean getIsItBirthDay() {
+		int month = date.getMonthValue();
+		int day = date.getDayOfMonth();
+		if (month == 1 && day == 1) {
+			return true;
+		}
+		return false;
+	}
 }
