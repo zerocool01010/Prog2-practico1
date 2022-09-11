@@ -7,32 +7,32 @@ public class Persona {
 	private String name; 
 	private int age;
 	private LocalDate date;
-	private int DNI;
+	private long DNI;
 	private String sex;
 	private int weight;
 	private double height;
 
-	// constructor
-	public Persona() {
-		this.name = "N N"; //we can use our own methods in constructor to set values
-		this.age = 22;
-		this.date = LocalDate.of(2000, 1, 1);
-		this.sex = "female";
-		this.weight = 78;
-		this.height = 1.76;
+	//the constructors
+		public Persona (int DNI) {
+			this(DNI, "N N");
+		}
+		public Persona(int DNI, String name) {
+			this(DNI, name, LocalDate.of(2000, 1, 1));
+		}
+		public Persona(int DNI, String name, LocalDate dateBirth) {
+			this("N N", 22, DNI, dateBirth, "female", 1, 1);
+		}
+	//object constructor
+	public Persona(String name, int age, long dni, LocalDate date, String sex, int w, double h) {
+		this.name = name; //we can use our own methods in constructor to set values
+		this.age = age;
+		this.DNI = dni;
+		this.date = date;
+		this.sex = sex;
+		this.weight = w;
+		this.height = h;
 	}
-	//the other constructors
-	public Persona (int DNI) {
-		this(DNI, "N N");
-	}
-	public Persona(int DNI, String name) {
-		this(DNI, name, LocalDate.of(2000, 1, 1));
-	}
-	public Persona(int DNI, String name, LocalDate dateBirth) {
-		this.DNI = DNI;
-		this.setName(name);
-		this.date = dateBirth;
-	}
+	
 	//getters
 	public String getName() {
 		return this.name;
@@ -118,11 +118,11 @@ public class Persona {
 	}
 	public String getObjectInfo() {
 		String info = ("El nombre es: " + this.getName()
-						+ "La edad es: " + this.getAge()
-						+ "El sexo es: " + this.getSex()
-						+ "La fecha de nacimiento es: " + this.getDateBirth()
-						+ "Su peso es: " + this.getWeight()
-						+ "Su altura es: " + this.getHeight()
+						+ " La edad es: " + this.getAge()
+						+ " El sexo es: " + this.getSex()
+						+ " La fecha de nacimiento es: " + this.getDateBirth()
+						+ " Su peso es: " + this.getWeight()
+						+ " Su altura es: " + this.getHeight()
 				);
 		return info;
 	}
