@@ -67,4 +67,15 @@ public class Electrodomestico {
 		return true;
 	}
 	
+	public double getBalance() {
+		return (this.mainprice / this.weight);
+	}
+	
+	public boolean getIsItHighEnd() {
+		if (this.getBalance() > 3) {
+			return true;
+		}
+		return false;
+	}
+	
 }
