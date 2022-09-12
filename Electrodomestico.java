@@ -1,7 +1,7 @@
 package ej2;
 
 public class Electrodomestico {
-	
+	final int LowConsumeMax = 45;
 	//attr
 	private String name;
 	private double mainprice;
@@ -58,6 +58,13 @@ public class Electrodomestico {
 	}
 	public void setWeight(int weight) {
 		this.weight = weight;
+	}
+	//methods
+	public boolean getIsItLowConsume() {
+		if (this.energyConsume >= LowConsumeMax) {
+			return false;
+		}
+		return true;
 	}
 	
 }
